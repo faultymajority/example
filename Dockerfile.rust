@@ -1,0 +1,5 @@
+FROM rust
+
+COPY . /build
+RUN cd /build && ls && make install
+
